@@ -1,0 +1,142 @@
+body {
+  background: #e9f0f4;
+  font-family: 'Asap', sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+#col-1{
+  display: flex;
+  flex-direction: column;
+}
+#new-post {
+  width: 570px;
+  height: 670px;
+  margin-top: 50px;
+  background: #fff;
+}
+#new-post #sidebar {
+  width: 90px;
+  height: 670px;
+  position: absolute;
+  z-index: 2;
+  background: #2e3641;
+}
+
+#new-post #sidebar img{
+  padding-top: 35px;
+  padding-left: 30px;
+  padding-bottom: 35px;
+  padding-right: 35px;
+}
+
+#new-post #sidebar #doc{
+  background: #fff;
+  
+}
+
+#new-post #main {
+  position: absolute;
+  margin-left: 130px;
+  padding-top: 50px; 
+  display: flex;
+  flex-direction: column;
+}
+
+#new-post #main h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  color: #2e3641;
+  font-size: 28px;
+}
+
+#new-post #main input {
+  width: 400px;
+  height: 45px;
+  padding-left: 10px; 
+  font-size: 20px;
+  font-family: serif;
+  margin-top: 15px;
+}
+
+#new-post #main input:focus {
+  outline: none;
+}
+#new-post #main input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e2eaef;
+}
+#new-post #main input::-moz-placeholder { /* Firefox 19+ */
+  color: #e2eaef;
+}
+#new-post #main input:-ms-input-placeholder { /* IE 10+ */
+  color: #e2eaef;
+}
+#new-post #main input:-moz-placeholder { /* Firefox 18- */
+  color: #e2eaef;
+}
+
+#new-post #main #content {
+  width: 400px;
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: row;
+  background: #2e3641;
+}
+
+#new-post #main #content img{
+  width: auto;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+#new-post #main #post {
+  width: 400px;
+  height: 340px;
+  resize: none;
+}
+
+#new-post #main #post:focus {
+  outline: none;
+}
+
+#new-post #main #buttons button {
+  width: 120px;
+  height: 45px;
+  color: white;
+  margin-top: 20px;
+}
+
+#new-post #main #buttons #save {
+  background: #c1cfd9;
+  border: none;
+  margin-right: 16px;
+}
+
+#new-post #main #buttons #preview {
+  background: #c1cfd9;
+  border: none;
+  margin-right: 16px;
+}
+
+#new-post #main #buttons #publish {
+  background: #f97e76;
+  border: none;
+}
+
+#nav-search {
+  margin-top: 60px;
+  height: 90px;
+  width: 570px;
+  background: #2e3641;
+  flex-direction: row;
+}
+
+#nav-search img {
+  padding: 35px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
