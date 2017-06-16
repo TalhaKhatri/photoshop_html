@@ -10,8 +10,8 @@
   </head>
   <body>
     
-    <div class="container">
-      <div id="column-1">
+    <div class="container-fluid">
+      <div class="col-md-6 col-sm-12">
           <div id="new-post">
             <div id="sidebar">
               <img src="./images/dash.png" id="dash">
@@ -29,19 +29,85 @@
                 <img src="./images/underline.png" id="underline">    
                 <img src="./images/strike.png" id="strike"> 
                 <img src="./images/left.png" id="left">
-                <img src="./images/left.png" id="right">            
+                <img src="./images/left.png" id="right">
+                <div id="empty"></div>          
               </div>
               <textarea id="post" ></textarea>
               <div id="buttons">
-                <button id="save">SAVE DRAFT</button>
-                <button id="preview">PREVIEW</button>
-                <button id="publish">PUBLISH</button>
+                <button class="button" id="save">save draft</button>
+                <button class="button" id="preview">preview</button>
+                <button class="button" id="publish">publish</button>
               </div>
             </div>
           </div>
+
           <div id="nav-search">
-            <img src="./images/message2.png" id="message">
+            <img src="./images/message2.png" id="nav-message">
+            <img src="./images/notification.png" id="notification">
+            <img src="./images/heart.png" id="heart">            
+            <div id="input"><input type="text"></div>
           </div>
+
+          <div id="subscribe-box">
+            <div class="title">Subscribe</div>
+            <div class="subtext">
+              Get our feed through email.
+            </div>
+            <div id="form">
+              <input type="text" placeholder="e.g. sinbad@montecristo.com">
+              <button class="button">Subscribe</button>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4  col-sm-12">
+        <div id="related-box">
+          <div class="title">Related Posts</div>
+          <div class="post">
+            <div class="post-title">
+              Philosophy cannot be taught; it is the application of sciences to the truth
+            </div>
+            <div class="post-author">
+              by Lord Wilmore
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-title">
+              Now let the avenging god make way for me to punish the wrongdoer!
+            </div>
+            <div class="post-author">
+              by Abbe Busoni
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-title">
+              There is neither happiness nor misery in the world
+            </div>
+            <div class="post-author">
+              by Monsieur Zaccone
+            </div>
+          </div>
+        </div>
+
+        <div id="tags-box">
+          <div class="title">Tags</div>
+          <div id="tags-content">
+            <input type="text">
+            <button class="button">add</button>
+          </div>
+          <div class="subtext">Seperate tags with commas</div>
+        </div>
+
+        <div id="map-box">
+          <div id="map">
+            <img src="./images/map.png" >
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+          </div>
+          <div id="map-content">
+            <input type="text">
+            <button class="button">add</button>
+          </div>
+        </div>
       </div>
     </div>
     
